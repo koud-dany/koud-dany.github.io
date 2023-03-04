@@ -1,0 +1,132 @@
+/* body{
+    font-family: sans-serif;
+    margin: 20px 40px;
+   }
+   #mainbox{
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s;
+   }
+   .sidemenu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s;
+   }
+   .sidemenu a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+   }
+   .sidemenu a:hover{
+     color: #23dbdb;
+   }
+   .sidemenu .closebtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+   } */
+
+   /* #box1 {
+     background-color: #23dbdb;
+   }
+   #box2{
+     background-color: blanchedalmond;
+   } */
+.navbar{
+  background-color: black;
+}
+.navbar .navbar-brand {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+   .navbar-nav { 
+       margin-left:60%; 
+   } 
+
+  .carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background-size: cover;
+  }
+  .carousel-item img{
+ height:100%;
+ border-image-width: auto;
+  }
+.carousel-caption{
+  bottom: 370px;
+}
+   .carousel-caption h5{
+     font-size: 45px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     margin-top: 25px;
+   }
+.carousel-caption p{
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+  line-height:1.9;
+}
+.navbar-light .navbar-nav .nav-link:focus-visible, .navbar-light .navbar-nav .nav-link:hover{
+  color: rgb(213, 200, 245);
+}
+.navbar .navbar-brand:focus-visible, .navbar .navbar-brand:hover{
+  color: rgb(213, 200, 245);
+}
+.dropdown-item{
+  background-color: white;
+  color: black;
+}
+.dropdown-item:focus-visible, .dropdown-item:hover{
+  color:white;
+  background-color:rgb(213, 200, 245);
+}
+/* image css */
+
+a.navbar-brand  img{
+  margin: 20px 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* social media */
+ li.nav-item .fa{
+  padding: 10px;
+  font-size: 20px;
+  width:5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 3px;
+  border-radius:0;
+ color: whitesmoke;
+ font-size: 16px;
+ 
+}
+a.fa.fa-linkedin{
+margin-left: 20px;
+}
+li.nav-item .fa:hover{
+  color: rgb(213, 200, 245);
+}
