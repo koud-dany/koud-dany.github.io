@@ -130,3 +130,29 @@ margin-left: 20px;
 li.nav-item .fa:hover{
   color: rgb(213, 200, 245);
 }
+
+/* --------------------------------- */
+
+.about-me{
+
+ margin-left: 50 px;
+
+}
+.about-me h1{
+  font-family:'Papyrus'
+}
+.about-me p {
+font-family:'Brush Script MT';
+font-size:27px;
+color: rgb(237, 235, 235);
+}
+.btn-primary {
+  color: #eeeff0;
+  background-color: transparent;
+  border-color: #e7ecec
+}
+.btn-primary:hover {
+  background-color: rgba(200, 183, 247, 0.811);
+ opacity: .6;
+  border-color: #e7ecec
+}

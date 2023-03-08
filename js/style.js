@@ -8,3 +8,6 @@ function openFunction(){
    document.getElementById("mainbox").style.marginLeft="0px";
    document.getElementById("mainbox").innerHTML="&#9776; Open";
   }
+
+
+//   about.html------------------------
