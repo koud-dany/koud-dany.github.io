@@ -50,6 +50,79 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 100%;
+    padding-top: 20px;
+    position: static;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .sidenav form a {
+    padding: 6px 8px 15px 30px;
+  }
+  .sidenav span {
+    display: block;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .sidenav span a {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .col {
+    margin: 20px;
+  }
+  .sidebar-toggle {
+  background-color: #111;
+  padding: 10px;
+}
+
+.sidebar-toggle img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-toggle h3,
+.sidebar-toggle h5 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.sidebar-toggle form {
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar-toggle form a {
+  display: block;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.sidebar-toggle span {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sidebar-toggle span a {
+  font-size: 30px;
+  margin: 0 10px;
+}
+}
+
+
+
+
 .sidenav span{
     display: inline-block;
    margin-left: 150px;
@@ -86,10 +159,11 @@ a img{
 <body>
 
 <div class="sidenav">
-
+  <div class="sidebar-toggle"></div>
  <img height="150px" width="150 px" src="../dany.jpeg"  style="margin-left: 150px;"  class="rounded-circle"><br><br>
  <h3 style="color: #f1f1f1; margin-left: 150px;">Dany Koudede</h3>
  <h5 style="color: #f1f1f1; margin-left: 100px;"> <i> danykoudede89@gmail.com</i></h5><br><br>
+
   <form>
  <a href="../index.html">Home</a>
   <a href="../templates/About.html">About me</a>
@@ -157,5 +231,42 @@ a img{
   
 </div>
    
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.querySelector('.sidenav');
+    const main = document.querySelector('.main');
+    const toggleButton = document.querySelector('.toggle-button');
+    let sidebarVisible = true;
+  
+    // Function to hide the sidebar
+    const hideSidebar = () => {
+      sidebar.style.transform = 'translateX(-360px)';
+      main.style.marginLeft = '0';
+      sidebarVisible = false;
+      toggleButton.style.display = 'block';
+    };
+  
+    // Function to show the sidebar
+    const showSidebar = () => {
+      sidebar.style.transform = 'translateX(0)';
+      main.style.marginLeft = '360px';
+      sidebarVisible = true;
+      toggleButton.style.display = 'none';
+    };
+  
+    // Function to toggle sidebar visibility
+    const toggleSidebar = () => {
+      if (sidebarVisible) {
+        hideSidebar();
+      } else {
+        showSidebar();
+      }
+    };
+  
+    // Event listener for the toggle button click
+    toggleButton.addEventListener('click', () => {toggleSidebar();
+  });
+});
+</script>
 </body>
 </html> 

@@ -161,3 +161,54 @@ color: rgb(237, 235, 235);
  opacity: .6;
   border-color: #e7ecec
 }
+
+@media screen and (max-width: 767px) {
+  /* styles for screens smaller than 600px wide */
+  .navbar-light .navbar-toggler {
+    /* color: rgb(252, 252, 252); */
+    border-color: whitesmoke;
+    opacity: .5;
+  }
+      .navbar {
+        padding: 0;
+      }
+    
+      .navbar-brand {
+        font-size: 14px;
+      }
+    
+      .navbar-nav {
+        justify-content: center;
+      }
+    
+        .carousel-caption {
+          font-size: 16px;
+          text-align: center;
+          color: #fff;
+          position: absolute;
+          bottom: 20px; /* Add some bottom margin to avoid overlapping with the footer */
+          left: 0;
+          right: 0;
+          padding: 20px;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+      
+        .carousel-caption h5 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+      
+        .carousel-caption p {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      
+        .carousel-caption .btn {
+          font-size: 14px;
+        }
+      
+        .carousel-item {
+          position: relative;
+        }
+
+}
