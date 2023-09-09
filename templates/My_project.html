@@ -6,6 +6,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <!-- icon css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xAa0ihGsOj6hO11Oa9osmI5N/73QcfaVAP2voiSVK0OTWm1F0wiVpWBS0RJ36E5C/wJcBeDoht6/83gg1cOOdw==" crossorigin="anonymous" />
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -123,6 +124,8 @@ body {
 
 
 
+
+
 .sidenav span{
     display: inline-block;
    margin-left: 150px;
@@ -133,6 +136,10 @@ body {
     margin-left: 15px;
  
 }
+
+
+
+
 
 .row {
    padding: 25px;
@@ -153,7 +160,17 @@ a img{
     font-size:20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.kaggle-logo {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
 
+
+.kaggle-link:hover .kaggle-logo {
+  fill:#c6abdb ;
+}
 </style>
 </head>
 <body>
@@ -175,7 +192,8 @@ a img{
   
       <a href="https://github.com/koud-dany" class="fa fa-github fa-5X"></a>
    
-      <a href="https://www.youtube.com/channel/UCqTNfu3dBI3CFOk-P2rzOVg" class="fa fa-youtube fa-5X"></a></span> 
+      <a href="https://www.youtube.com/channel/UCqTNfu3dBI3CFOk-P2rzOVg" class="kaggle-link"><img src="../doc/kaggle-logo.png" alt="Kaggle"  class="kaggle-logo "></a>
+    </span> 
     
    
   <!-- next -->
